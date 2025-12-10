@@ -2084,19 +2084,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Windows 10\\.nuget\\packages\\": {}
+    "C:\\Users\\e mart kahawatta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Windows 10\\Desktop\\Cake_Shop_POS\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\e mart kahawatta\\Desktop\\Cake_Shop_POS\\backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\Windows 10\\Desktop\\Cake_Shop_POS\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Windows 10\\Desktop\\Cake_Shop_POS\\Backend\\obj\\",
+      "projectPath": "C:\\Users\\e mart kahawatta\\Desktop\\Cake_Shop_POS\\backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\e mart kahawatta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\e mart kahawatta\\Desktop\\Cake_Shop_POS\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\e mart kahawatta\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
