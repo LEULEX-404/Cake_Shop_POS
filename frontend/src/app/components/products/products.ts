@@ -92,7 +92,7 @@ export class Products implements OnInit, OnDestroy {
   }
 
   loadAllProducts() {
-    this.http.get<Product[]>('http://localhost:5277/api/product')
+    this.http.get<Product[]>('http://localhost:5155/api/product')
       .subscribe({
         next: data => this.productList = data,
         error: err => console.error(err)
@@ -103,7 +103,7 @@ export class Products implements OnInit, OnDestroy {
     if (!this.barcode.trim() || this.isProcessing) return;
     this.product = undefined;
     this.message = '';
-    this.http.get<Product>(`http://localhost:5277/api/product/barcode/${this.barcode}`)
+    this.http.get<Product>(`http://localhost:5155/api/product/barcode/${this.barcode}`)
       .subscribe({
         next: data => { this.product = data; this.message='Product found'; this.messageType='success'; this.cdr.detectChanges(); },
         error: err => { this.product=undefined; this.message='Product not found'; this.messageType='error'; this.cdr.detectChanges(); }
@@ -156,7 +156,7 @@ export class Products implements OnInit, OnDestroy {
       // 1️⃣ Reduce stock for each invoice item
       for(const item of this.invoiceItems) {
         await firstValueFrom(this.http.post(
-          'http://localhost:5277/api/product/reduce',
+          'http://localhost:5155/api/product/reduce',
           { barcode: item.barcode, qty: item.qty },
           { responseType: 'text' }
         ));
@@ -180,7 +180,7 @@ export class Products implements OnInit, OnDestroy {
   
       // 3️⃣ Send invoice to backend
       await firstValueFrom(this.http.post(
-        'http://localhost:5277/api/invoice/create',
+        'http://localhost:5155/api/invoice/create',
         invoicePayload
       ));
   
